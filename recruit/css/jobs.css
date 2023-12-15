@@ -1,0 +1,207 @@
+.jobs_wrapper {
+    display: flex;
+    justify-content: center;
+    background: #FAFAFA;
+    padding: 10rem 0 20rem;
+}
+
+.jobs_inner {
+    max-width: 968px;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.jobs_content {
+    padding: 7.4rem;
+}
+
+.jobs_item_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.jobs_item {
+    background-image: url(../images/bg-jobs.jpg);
+    width: 39.5rem;
+    height: 21rem;
+    flex-shrink: 0;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jobs_box {
+    margin-top: 7rem;
+}
+
+/* ----------------------------------------SP---------------------------------------- */
+/* ----------------------------------------SP---------------------------------------- */
+/* ----------------------------------------SP---------------------------------------- */
+@media screen and (max-width:481px) {
+
+    .jobs_title {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4rem;
+        /* 200% */
+        letter-spacing: 0;
+    }
+
+    .jobs_sec_title {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.2rem;
+        /* 200% */
+        letter-spacing: 0.096rem;
+    }
+
+    .jobs_wrapper {
+        padding-top: 1rem;
+        padding-bottom: 10rem;
+    }
+
+    .jobs_inner {
+        max-width: none;
+        margin: 0 2rem;
+    }
+
+    .jobs_content {
+        padding: 3rem 2rem;
+    }
+
+    .jobs_item_wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .jobs_item {
+        width: 100%;
+        height: 20rem;
+    }
+}
+
+/* 募集要項テーブルの設定 */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 3rem 0;
+    text-align: left;
+
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.9rem;
+    letter-spacing: 0.084rem;
+}
+
+table th {
+    width: 30%;
+    font-weight: 700;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    th::before {
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        content: attr(data-label);
+    }
+
+
+    table th {
+        padding: 2rem 0 0 0;
+        font-weight: 700;
+        width: auto;
+    }
+    table td {
+        padding: 0 0 2rem 0;
+    }
+
+}
+
+
+/* エントリーボタン */
+/* エントリーボタン */
+/* エントリーボタン */
+a.btn-slide {
+    width: 39rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,
+            #fff 0%,
+            #fff 50%,
+            var(--red) 50%,
+            var(--red) 100%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    transition: background-position ease 0.2s;
+    margin: 0 auto;
+}
+
+a.btn-slide:hover {
+    background-position: 0 0;
+    color: var(--red);
+}
+
+
+a.btn-slide:hover button {
+    color: var(--red);
+}
+
+
+.is-mt-40px {
+    margin-top: 4rem !important;
+}
+
+@media screen and (max-width: 600px) {
+    a.btn-slide {
+        width: 100%;
+        height: 5rem;
+    }
+}

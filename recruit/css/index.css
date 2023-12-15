@@ -1,0 +1,964 @@
+/* FONTS DEFINITION */
+p.ppl_jobs {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+}
+
+p.ppl_name {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+}
+
+.ppl_text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+}
+
+/* FIRSTVIEW */
+/* FIRSTVIEW */
+/* FIRSTVIEW */
+
+#fv {
+    height: 100vh;
+    min-height: 600px;
+    /* margin: 100px 90px 90px; */
+}
+
+.fv_inner {
+    background-image: url(../images/hero.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.fv_title {
+    position: absolute;
+    left: 8rem;
+    bottom: 5rem;
+    width: 76rem;
+}
+
+#message {
+    margin-top: 15rem;
+}
+
+.img_message1 {
+    width: 40rem;
+    height: 49rem;
+    overflow: hidden;
+}
+
+.img_message1 img {
+    height: 100%;
+}
+
+.img_message2 {
+    width: 61.5rem;
+    height: 32rem;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.img_message3 {
+    width: 100%;
+    height: 35.3rem;
+    overflow: hidden;
+    object-position: 0 0;
+}
+
+.img_message3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 画像を要素のサイズに合わせてカバーする */
+    object-position: top 0;
+    /* トリミング位置を中央に設定 */
+}
+
+.message_box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19rem;
+    margin-left: 10rem;
+}
+
+.message_box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 24rem;
+}
+
+.message_box3 {
+    margin-top: 15rem;
+}
+
+.message_box4 {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message_box3_text_wrapper {
+    margin-top: 7rem;
+}
+
+.message1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.message1_text {
+    margin-bottom: 1.5rem;
+}
+
+.message_title2 {
+    margin-top: 4rem;
+}
+
+.list_message4 {
+    margin-top: 5rem;
+}
+
+.list_message {
+    position: relative;
+    margin-left: 140px;
+}
+
+.list_message::before {
+    content: url(../images/message_num01.png);
+    transform: scale(0.6);
+    padding-right: 5px;
+    display: block;
+    position: absolute;
+    left: -120px;
+    top: -50%;
+}
+
+.list_message:nth-child(2):before {
+    content: url(../images/message_num02.png);
+}
+
+.list_message:nth-child(3):before {
+    content: url(../images/message_num03.png);
+}
+
+
+/*---------------------------------------------------------- 2キャリア ----------------------------------------------------------*/
+/*---------------------------------------------------------- 2キャリア ----------------------------------------------------------*/
+/*---------------------------------------------------------- 2キャリア ----------------------------------------------------------*/
+
+/* モーダル */
+body.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.md-title {
+    color: var(--black);
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6.3538rem;
+    letter-spacing: 0.384rem;
+    margin-bottom: 5rem;
+}
+
+.md-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: 9999;
+}
+
+.md-contents {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    transform: translateX(-50%);
+    z-index: 10000;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+.md-inner {
+    padding: 24px 40px;
+    background: #fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.md-xmark {
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    width: 25px;
+    height: 22px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.md-xmark span {
+    height: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.md-xmark span:nth-of-type(1) {
+    top: 0;
+    transform: translateY(10px) rotate(-45deg);
+}
+
+
+.md-xmark span:nth-of-type(2) {
+    bottom: 0;
+    transform: translateY(-10px) rotate(45deg);
+}
+
+.md-inner figure {
+    margin-bottom: 10rem;
+}
+
+.md-inner p {
+    width: 781px;
+}
+
+.entrepreneur_container a {
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,
+            var(--black) 0%,
+            var(--black) 50%,
+            var(--red) 50%,
+            var(--red) 100%);
+    transition: background-position ease 0.2s;
+    position: relative;
+    width: 64rem;
+    height: 30rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.entrepreneur_container.is-bg-black a {
+    background-image: linear-gradient(to right,
+            var(--red) 0%,
+            var(--red) 50%,
+            var(--black) 50%,
+            var(--black) 100%);
+}
+
+.entrepreneur_container_inner {
+    margin-left: 6rem;
+}
+
+.entrepreneur_container a:hover {
+    background-position: 0 0;
+    color: var(--red);
+}
+
+.career_container_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.entrepreneur_container {
+    margin: 0;
+}
+
+.entrepreneur_title-lv3 {
+    margin-top: 0;
+}
+
+#career {
+    margin-top: 15rem;
+}
+
+.career_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrepreneur_container_inner button {
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    border: #fff 2px solid;
+    padding: 0.8rem 2rem;
+    color: #fff;
+}
+
+.career_inner .section_heading {
+    /* margin-left: 6.4rem; */
+    margin-bottom: 4rem;
+}
+
+/* ------------------------------------------------------------ COMPANY ---------------------------------------------------- */
+/* ------------------------------------------------------------ COMPANY ---------------------------------------------------- */
+/* ------------------------------------------------------------ COMPANY ---------------------------------------------------- */
+#company {
+    margin-top: 25rem;
+}
+
+.company_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1080px;
+    height: 66.4rem;
+}
+
+.company_arrow {
+    width: 10px;
+    height: 42px;
+}
+
+.company_container {
+    position: absolute;
+    right: 0;
+}
+
+.company_menu_list {
+    margin-bottom: 2rem;
+}
+
+.st1 {
+    width: 10px;
+    height: 42px;
+    fill: #fff;
+}
+
+.img_company {
+    width: 66.4rem;
+    height: 66.4rem;
+    position: absolute;
+    left: 0;
+}
+
+.img_company img {
+    height: 100%;
+}
+
+.company_inner .section_heading {
+    margin-bottom: 4rem;
+}
+
+/* Bボタン アクション */
+.company_arrow {
+    display: none;
+}
+
+.company_menu_list a {
+    width: 49.9rem;
+    height: 8.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,
+            #fff 0%,
+            #fff 50%,
+            var(--red) 50%,
+            var(--red) 100%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    transition: background-position ease 0.2s;
+    color: #fff;
+}
+
+.company_menu_list a:hover {
+    background-position: 0 0;
+    color: var(--red);
+}
+
+.company_menu_list:hover .st1 {
+    fill: var(--red);
+}
+
+/*------------------------------------------------------------------ PEOPLE ---------------------------------------------------------------------*/
+/*------------------------------------------------------------------ PEOPLE ---------------------------------------------------------------------*/
+/*------------------------------------------------------------------ PEOPLE ---------------------------------------------------------------------*/
+#people {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+#people .section_heading {
+    margin-bottom: 5rem;
+}
+
+.ppl_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ppl_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    max-width: 138rem;
+}
+
+.ppl_box:nth-child(2n) {
+    margin-top: 10rem;
+}
+
+.ppl_box_upper {
+    background-image: url(../images/members/img-interview-i-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67rem;
+    height: 41rem;
+    position: relative;
+}
+
+.ppl_container .ppl_box:nth-child(2) .ppl_box_upper {
+    background-image: url(../images/members/img-interview-k-3.jpg);
+}
+
+.ppl_container .ppl_box:nth-child(3) .ppl_box_upper {
+    background-image: url(../images/members/img-interview-d-1.jpg);
+}
+.ppl_container .ppl_box:nth-child(4) .ppl_box_upper {
+    background-image: url(../images/members/img-interview-h-3.jpg);
+}
+.ppl_container .ppl_box:nth-child(5) .ppl_box_upper {
+    background-image: url(../images/members/img-interview-n-1.jpg);
+}
+.ppl_container .ppl_box:nth-child(6) .ppl_box_upper {
+    background-image: url(../images/members/img-interview-ay-1.jpg);
+}
+.ppl_container .ppl_box:nth-child(7) .ppl_box_upper {
+    background-image: url(../images/members/img-interview-mh-1.jpg);
+}
+
+.ppl_name_box {
+    background: var(--black);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.ppl_text {
+    margin-top: 1.5rem;
+}
+
+/* --------------------------------------------------- INTERNSHIP --------------------------------------------------------- */
+/* --------------------------------------------------- INTERNSHIP --------------------------------------------------------- */
+/* --------------------------------------------------- INTERNSHIP --------------------------------------------------------- */
+#internship {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    width: 47.6rem;
+    height: 12.2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.internship_inner a {
+    display: flex;
+    background: #fff;
+}
+
+.internship_img {
+    width: 50%;
+}
+
+.internship_heading {
+    width: calc(50% - 3rem);
+    padding: 2rem 3rem;
+}
+
+#internship.off {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* --------------------------------------------------------------SP------------------------------------------------------ */
+/* --------------------------------------------------------------SP------------------------------------------------------ */
+/* --------------------------------------------------------------SP------------------------------------------------------ */
+@media screen and (max-width:481px) {
+
+    /* 共通 */
+    /* 共通 */
+    /* 共通 */
+    body.active .header {
+        background: #fff;
+    }
+
+    h2.section_title {
+
+        font-size: 3.3328rem;
+
+        font-weight: 900;
+        line-height: 3.9445rem;
+
+        letter-spacing: -0.3333rem;
+    }
+
+    .navtext-container,
+    .menu-icon,
+    .menu {
+        display: initial;
+    }
+
+    .career_inner .section_heading {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    /* FV */
+    /* FV */
+    /* FV */
+    .fv_title {
+        left: 0;
+        bottom: 0;
+        width: auto;
+    }
+
+    .fv_inner {
+        background-position: 70% 50%;
+        height: calc(100vh - 18rem);
+    }
+
+    #fv {
+        height: auto;
+        min-width: none;
+    }
+
+    /* INTERNSHIP */
+    /* INTERNSHIP */
+    /* INTERNSHIP */
+
+    #internship.off {
+        opacity: 0;
+    }
+
+    #internship {
+        width: 100%;
+        border-radius: .5rem;
+        bottom: 7rem;
+        height: 11rem;
+        transition: .4s;
+    }
+
+    .internship_inner {
+        height: 100%;
+    }
+
+    .internship_inner a {
+        height: 100%;
+    }
+
+    .internship_title {
+
+        font-size: 1.4748rem;
+
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.0885rem;
+    }
+
+    .internship_subtitle {
+        font-size: 1.1471rem;
+
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.0688rem;
+    }
+
+    .internship_heading {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        padding-left: 3rem;
+    }
+
+    /* MESSAGE */
+    /* MESSAGE */
+    /* MESSAGE */
+    #message {
+        margin-top: 6rem;
+    }
+
+    .message_box1 {
+        flex-direction: column;
+        margin-left: 0;
+        margin: 0 .8rem;
+        gap: 1.3rem;
+    }
+
+    .messageText {
+        text-align: center;
+
+        font-size: 1.8rem;
+
+        font-weight: 500;
+        line-height: 4.0872rem;
+
+        letter-spacing: 0.108rem;
+    }
+
+    .message1_text {
+        text-align: center;
+
+        font-size: 1.6rem;
+
+        font-weight: 700;
+        line-height: 3.63rem;
+
+        letter-spacing: 0.0998rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .message_box2 {
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+        gap: 5rem;
+    }
+
+    .img_message1 {
+        width: auto;
+        margin-top: 5rem;
+        width: 80%;
+        height: 20rem;
+        flex-shrink: 0;
+        margin-right: -20%;
+    }
+
+    .message2_text {
+        color: #172432;
+        text-align: center;
+
+        font-size: 2rem;
+
+        font-weight: 700;
+        line-height: 3.63rem;
+
+        letter-spacing: 0rem;
+    }
+
+    .img_message2 {
+        width: auto;
+        width: 90%;
+        height: 22.5rem;
+        flex-shrink: 0;
+        margin-left: -10%;
+    }
+
+    .message_title {
+
+        font-size: 3.3328rem;
+
+        font-weight: 900;
+        line-height: 3.9445rem;
+
+        letter-spacing: -0.3333rem;
+    }
+
+    .message_box3 {
+        margin-top: 5rem;
+    }
+
+    .message_box3_text_wrapper {
+        margin-top: 5rem;
+    }
+
+    .img_message3 {
+        height: 14rem;
+        flex-shrink: 0;
+    }
+
+    .message_title2 {
+
+        font-size: 3.3328rem;
+
+        font-weight: 900;
+        line-height: 3.9445rem;
+
+        letter-spacing: -0.3333rem;
+        text-align: left;
+    }
+
+    .list_message {
+        color: #172432;
+
+        font-size: 2rem;
+
+        font-weight: 500;
+        line-height: 3.7148rem;
+
+        letter-spacing: 0.12rem;
+        margin-left: 4rem;
+    }
+
+    .list_message::before {
+        width: 2.7rem;
+        height: 3.8rem;
+        transform: scale(.35);
+        left: -66px;
+        top: -45%;
+    }
+
+    .message_box4 {
+        margin-top: 4rem;
+    }
+
+    .message_title2 {
+        margin-top: 2rem;
+    }
+
+    /* 2キャリア */
+    /* 2キャリア */
+    /* 2キャリア */
+    .entrepreneur_container_inner {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .career_inner {
+        display: inherit;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #career {
+        margin-top: 10rem;
+    }
+
+    .course_wrapper {
+        flex-direction: column;
+    }
+
+    .entrepreneur_course_wrapper,
+    .career_course_wrapper {
+        width: 100%;
+    }
+
+    .entrepreneur_title-lv3 {
+        color: #FFF;
+
+        font-size: 2.4rem;
+
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.24rem;
+    }
+
+    #career h4 {
+        font-size: 1.6rem;
+
+        font-weight: 500;
+        line-height: 3.2rem;
+
+        letter-spacing: 0.096rem;
+    }
+
+    .md-title {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.144rem;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
+    .md-inner p{
+        width: 325px;
+    }
+
+    .md-inner figure {
+        margin-bottom: 6rem;
+    }
+
+    .entrepreneur_course_wrapper,
+    .career_course_wrapper {
+        width: calc(100vw - 4rem);
+        height: 18.8rem;
+    }
+
+    .entrepreneur_container,
+    .career_container {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #career button {
+        text-align: center;
+    }
+
+    .course_wrapper {
+        gap: 2rem;
+    }
+
+    /* COMPANY */
+    /* COMPANY */
+    /* COMPANY */
+    #company {
+        margin-top: 10rem;
+    }
+
+    .img_company {
+        width: auto;
+        height: auto;
+        width: 31.7rem;
+        height: 30.4rem;
+        flex-shrink: 0;
+        margin-left: 2rem;
+    }
+
+    .company_wrapper {
+        position: relative;
+        height: 43.2rem;
+    }
+
+    .company_container {
+        width: 100%;
+    }
+
+    #company .section_heading {
+        position: absolute;
+        top: -230px;
+        left: 2rem;
+    }
+
+    .company_menu {
+        position: absolute;
+        right: 0;
+        top: -80px;
+    }
+
+    .company_menu_list {
+        margin-right: 2rem;
+        margin-bottom: 1.3rem;
+        color: #FFF;
+
+        font-size: 1.846rem;
+
+        font-weight: 900;
+        line-height: 2.8517rem;
+
+        letter-spacing: -0.1846rem;
+    }
+
+    .company_menu_list a {
+        width: auto;
+        height: 5.6rem;
+        width: 26rem;
+    }
+
+    #company .is-white {
+        color: var(--black);
+    }
+
+    /* PEOPLE */
+    /* PEOPLE */
+    /* PEOPLE */
+    .ppl_box_upper {
+        width: 100%;
+        height: 22rem;
+    }
+
+    .ppl_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ppl_box {
+        width: calc(100% - 4rem);
+    }
+
+    p.ppl_name,
+    p.ppl_jobs {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+    }
+
+    .ppl_text {
+        color: #172432;
+
+        font-size: 1.4rem;
+
+        font-weight: 500;
+        line-height: 2.8rem;
+
+        letter-spacing: 0.084rem;
+    }
+
+    .ppl_box:nth-child(2n) {
+        margin-top: 0;
+    }
+
+    #people .section_heading {
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+
+    #people {
+        margin-bottom: 8rem;
+        margin-top: 10rem;
+    }
+
+    /* モーダル */
+    .career_container_wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .entrepreneur_container a {
+        width: 100%;
+        height: 18.8rem;
+    }
+
+    .entrepreneur_container,
+    .career_container {
+        margin: 0;
+    }
+}

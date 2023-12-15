@@ -1,0 +1,184 @@
+.contact_wrapper{
+    margin: 10rem auto 0;
+    max-width: 768px;
+}
+.contentsMainTitle{
+    margin-bottom: 2rem;
+}
+.contentsMenu{
+    margin-bottom: 2rem;
+}
+#mailform{
+    margin-bottom: 15rem;
+}
+
+input,
+select {
+    padding: 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+
+    /* width: 100%; */
+    box-sizing: border-box; 
+}
+
+li input {
+    margin-bottom: 7px;
+}
+
+.mailform{
+    border-collapse: collapse;
+}
+/* テーブル内の各行に下線を追加 */
+.mailform tr {
+    border-bottom: 1px solid #ccc; /* 灰色の下線 */
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.mailform th{
+    vertical-align: middle;
+    padding-right: 2rem;
+    width: 40%;
+}
+
+/* 各テーブルデータ(td)に上下のパディングを追加 */
+.mailform td {
+    padding: 1.5rem 0; /* 上下に1.5remのパディング */
+    border-bottom: 1px solid #ccc; /* 灰色の下線 */
+    width: 60%;
+}
+
+
+/* ラジオボタンの基本スタイル */
+input[type="radio"] {
+    accent-color: #ddd;
+    /* ラジオボタンの色を設定 */
+}
+
+/* ラジオボタンが選択されたときのスタイル */
+input[type="radio"]:checked {
+    accent-color: var(--red);
+    /* 選択されたときの色を赤に設定 */
+}
+
+textarea {
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 4px);
+}
+
+#jobinfoindex,
+#jobinfoindex_bottom {
+    border-top: 1px solid #ddd;
+}
+
+.required {
+    background: var(--red);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+
+.row {
+    display: flex;
+}
+
+.pd20 {
+    padding: 2rem 0;
+}
+.pdb20 {
+    padding-bottom: 2rem;
+}
+
+.one-fourth {
+    width: 30%;
+}
+
+.three-fourth {
+    width: 70%;
+}
+
+.submit_btn {
+    width: 39rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,
+            #fff 0%,
+            #fff 50%,
+            var(--red) 50%,
+            var(--red) 100%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    transition: background-position ease 0.2s;
+    margin: 0 auto;
+    color: #fff;
+
+    margin-top: 10rem;
+}
+
+
+.submit_btn:hover {
+    background-position: 0 0;
+    color: var(--red);
+}
+
+
+.contentsMenuSub {
+    margin-top: 2rem;
+}
+
+/* プライバシーポリシーのリンクのスタイル */
+.contentsMenuSub a {
+    color: #00BFFF; /* 水色に設定 */
+    text-decoration: underline; /* 下線を付ける */
+}
+
+.contentsMenuSub a {
+    display: inline; /* リンクをインライン要素にする（段落なし） */
+    margin: 0; /* マージンをゼロに設定 */
+    padding: 0; /* パディングをゼロに設定 */
+}
+
+.formButton {
+    text-align: center; /* テキストを中央寄せにする */
+    margin-top: 1rem; /* 上マージンを設定 */
+    margin-bottom: 1rem; /* 下マージンを設定 */
+}
+
+
+@media screen and (max-width:481px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .one-fourth {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .three-fourth {
+        width: 100%;
+    }
+
+    .pd20 {
+        padding: 1rem 0;
+    }
+    .pdb20{
+        padding-bottom: 1rem;
+    }
+    .required{
+        font-size: 1rem;
+    }
+
+    .submit_btn {
+        width: 100%;
+        height: 5rem;
+    }
+}

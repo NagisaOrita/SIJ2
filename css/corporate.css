@@ -1,0 +1,148 @@
+#corp-info {
+    margin-top: 10rem;
+}
+
+.corp-info_contents {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 4.7rem;
+}
+
+.corp-info tr {
+    border-bottom: solid 1px #ccc;
+}
+
+.corp-info td:last-child {
+    padding-bottom: 3rem;
+}
+
+.corp-info td:first-child {
+    padding-top: 3rem;
+}
+
+.corp-info td {
+    padding-right: 4.8rem;
+}
+
+.corp-info td {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.37rem;
+    letter-spacing: 0.01rem;
+}
+
+.corp-info_title,
+.access_title{
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* 親要素に中央揃えを適用 */
+.corp-info_title {
+    text-align: center;
+}
+
+/* h2要素とその::before疑似要素を中央揃えにする */
+.corp-info_title h2,
+.access_title h2 {
+    display: inline-block; /* h2をinline-blockに設定 */
+    position: relative;
+    margin-left: 2rem;
+}
+
+.corp-info_title h2::before,
+.access_title h2::before {
+    content: "";
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100px;
+    background: var(--red);
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.access_text{
+    text-align: center;
+}
+
+.map_wrapper {
+    width: 100%; /* コンテナの幅を全幅に設定 */
+    padding: 0; /* 必要に応じてパディングを削除 */
+    margin-top: 3rem;
+}
+
+.map_wrapper iframe {
+    width: 100%; /* iframeの幅を全幅に設定 */
+    height: 468px; /* 高さは必要に応じて調整 */
+    border: none; /* 枠線を削除 */
+}
+
+#access{
+    margin-top: 10rem;
+}
+
+
+/* --------------------------------------------------------------SP スマホ------------------------------------------------------ */
+/* --------------------------------------------------------------SP スマホ------------------------------------------------------ */
+/* --------------------------------------------------------------SP スマホ------------------------------------------------------ */
+@media screen and (max-width:481px) {
+    #corp-info{
+        margin-top: 4rem;
+    }
+    .corp-info_contents{
+        flex-direction: column;
+    }
+    .corp-info_title h2,
+    .access_title h2{
+        font-size: 2.4rem;
+        letter-spacing: 0.144rem;
+        line-height: normal;
+    }
+    .corp-info td{
+        padding: 0;
+        display: block; /* Stack td elements vertically */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        flex-basis: 50%; /* Assign flex basis to split the row into two halves */
+        text-align: left; /* Align text to the left */
+    }
+    .corp-info td:first-child{
+        padding: 0;
+    }
+    .corp-info td:last-child{
+        padding: 0;
+    }
+
+
+    .corp-info_contents {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .corp-info td {
+        padding-right: 3rem;
+        white-space: nowrap;
+    }
+
+    .corp-info_contents_r,
+    .corp-info_contents_l {
+        width: 100%;
+    }
+
+    .corp-info_contents_r table,
+    .corp-info_contents_l table {
+        width: 100%;
+    }
+
+    .corp-info_contents{
+        gap: 0;
+    }
+}

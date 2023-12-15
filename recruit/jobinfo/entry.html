@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>採用情報 ｜ 株式会社Sales and Innovation Japan</title>
+  <link rel="icon" href="/recruit/images/favicon.ico">
+  <link rel="stylesheet" href="/recruit/css/reset.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/recruit/css/common.css">
+  <link rel="stylesheet" href="/recruit/css/entry.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_inner">
+        <div class="header_logo">
+            <a href="/recruit/"><img class="header_logo_image" src="/recruit/images/logo.png" alt="SIJ Company Logo"></a>
+        </div>
+        <nav class="header_menu">
+            <ul class="header_menu_list">
+                <li class="header_menu_item"><a href="/recruit/ceomessage/">メッセージ</a></li>
+                <li class="header_menu_item"><a href="/recruit/works/">SIJの働き方</a></li>
+                <li class="header_menu_item"><a href="/recruit/data/">データで見るSIJ</a></li>
+                <li class="header_menu_item"><a href="/recruit/culture/">SIJの文化</a></li>
+                <li class="header_menu_item_highlight is-bg-black"><a href="/recruit/jobinfo/">募集要項</a></li>
+                <li class="header_menu_item_highlight"><a href="/recruit/jobinfo/entry.html">ENTRY</a></li>
+            </ul>
+        </nav>
+        <div class="header_burger">
+            <span class="header_burger_line"></span>
+            <span class="header_burger_line"></span>
+            <span class="header_burger_line"></span>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <div class="menu-wrapper">
+            <ul class="menu">
+                <li class="top"><a href="/recruit/">TOP</a></li>
+                <li><a href="/recruit/#message">メッセージ</a></li>
+                <li><a href="/recruit/#career">選べる2つのキャリア</a></li>
+                <li><a href="/recruit/internship/">インターンシップについて</a></li>
+            </ul>
+            <ul class="menu">
+                <li class="top"><a href="/recruit/#company">SIJについて知る</a></li>
+                <li><a href="/recruit/ceomessage/">代表メッセージ</a></li>
+                <li><a href="/recruit/works/">SIJの仕事内容</a></li>
+                <li><a href="/recruit/data/">データで見るSIJ</a></li>
+                <li><a href="/recruit/culture/">SIJの文化･働き方</a></li>
+            </ul>
+            <ul class="menu">
+                <li class="top"><a href="/recruit/#people">SIJで働く人について</a></li>
+            </ul>
+            <ul class="menu">
+                <li class="top"><a href="/recruit/jobinfo/">採用情報</a></li>
+                <li class="top"><a href="/recruit/jobinfo/#fresh-s">新卒･第2新卒採用</a></li>
+                <li class="top"><a href="/recruit/jobinfo/#career-s">キャリア採用</a></li>
+                <li class="top"><a href="/recruit/jobinfo/#internship-s">インターンシップ採用</a></li>
+            </ul>
+            <ul class="sp_under_menu">
+                <li class=" header_menu_item_highlight is-bg-black"><a href="/recruit/jobinfo/">募集要項</a></li>
+                <li class=" header_menu_item_highlight"><a href="/recruit/entry.html">ENTRY</a></li>
+            </ul>
+            <ul class="menu">
+                <li class="top"><a href="/privacy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
+                <li class="top"><a href="/sitemap/" target="_blank" rel="noopener noreferrer">サイトマップ</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</header>
+
+<ul class="sp_under_menu">
+    <li class=" header_menu_item_highlight is-bg-black"><a href="/recruit/jobinfo/">募集要項</a></li>
+    <li class=" header_menu_item_highlight"><a href="/recruit/jobinfo/entry.html">ENTRY</a></li>
+</ul>
+
+  <div class="" id="p_fv">
+    <div class="p_fv_inner top-ceo">
+      <div class="p_fv_heading">
+        <p class="p_en_title">ENTRY</p>
+        <h1 class="p_fv_title">
+          エントリー
+        </h1>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="p_wrapper">
+      <div class="p_inner">
+        <div class="p_content">
+          <article>
+            <div id="jobinfo_intro" class="pdb20">
+              <h2 class="is-32px">エントリーフォーム</h2>
+              <p>
+                必要事項をご入力の上、送信してください。
+              </p>
+            </div>
+
+            <form id="mailform" method="post" action="/mailform/send.cgi" onSubmit="return sendmail(this);">
+              <div id="jobinfoindex_top" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>氏名<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <div id="jobinfo_entry">
+                    <input type="text" name="氏名(必須)" placeholder="例&rpar; 山田 太郎"
+                      style="width:100%; box-sizing:border-box">
+                  </div>
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>氏名（ふりがな）<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <input type="text" name="氏名（ふりがな）(必須)" placeholder="例&rpar; やまだ たろう"
+                    style="width:100%; box-sizing:border-box">
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>年齢<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <input type="text" name="年齢(必須)" size="5" placeholder="例&rpar; 22" maxlength="2"> 歳
+                  </p>
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>性別<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+                  <ul>
+                    <li><input type="radio" name="性別(必須)" value="男"> 男</li>
+                    <li><input type="radio" name="性別(必須)" value="女"> 女</li>
+                    <li><input type="radio" name="性別(必須)" value="未回答"> 未回答</li>
+                  </ul>
+                </div>
+              </div>
+              <!--<div id="jobinfoindex" class="row pd20">
+                      <div class="col one-fourth">
+                  <h3>郵便番号/br>必須<</h3>
+                      </div>
+                      <div class="col three-fourth">
+  
+                            <input type="text" name="郵便番号(必須)" size<input type="button" value="〒から住所を自動入力" onClick="mfpc('mailform','郵便番号(必須)','住所(必須)')
+  
+                      </div>
+                    </div>-->
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>住所<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+                  <input type="text" name="住所(必須)" placeholder="例&rpar; 東京都品川区東五反田5-27-10 野村マンション301号室"
+                    style="width:100%; box-sizing:border-box">
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>メールアドレス<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <input type="text" name="email(必須)" class="mf" placeholder="例&rpar; abc@salesandinnovation.co.jp"
+                    style="ime-mode:disabled; width:100%; box-sizing:border-box">
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>確認用メールアドレス<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+                  <input type="text" name="confirm_email" class="mf" placeholder="例&rpar; abc@salesandinnovation.co.jp"
+                    style="ime-mode:disabled; width:100%; box-sizing:border-box">
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>電話番号<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <input type="text" name="電話番号(必須)" placeholder="例&rpar; 03-3779-6903"
+                    style="width:100%; box-sizing:border-box">
+
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>大学名・学部名</h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <input type="text" name="大学名・学部名" placeholder="例&rpar; ○○大学○○学部"
+                    style="width:100%; box-sizing:border-box">
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>卒業予定年月（既卒の方は卒業年月日）</h3>
+                </div>
+                <div class="col three-fourth">
+
+
+                  <input type="text" name="_卒業年" placeholder="例&rpar; 2024" size="10" maxlength="4"> 年
+                  <input type="text" name="_卒業月" placeholder="例&rpar; 3" size="5" maxlength="2"> 月
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>応募種別<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+
+                  <div id="jobinfo_entry">
+                    <select name="応募種別(必須)">
+                      <option value="">以下よりお選びください</option>
+                      <option value="新卒採用">新卒採用</option>
+                      <option value="中途採用">中途採用</option>
+                      <option value="インターンシップ採用">インターンシップ採用</option>
+                    </select>
+
+                  </div>
+
+                </div>
+              </div>
+              <div id="jobinfoindex" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>面接希望日時<span class="required">必須</span></h3>
+                </div>
+                <div class="col three-fourth">
+                  <ul>
+                    <li>
+                      <p>第一希望</p><input type="text" name="面接第一希望(必須)" placeholder="例&rpar; 2024年4月4日 13時"
+                        style="width:100%; box-sizing:border-box">
+                    </li>
+                    <li>
+                      <p>第二希望</p><input type="text" name="面接第二希望(必須)" placeholder="例&rpar; 2024年4月5日 13時"
+                        style="width:100%; box-sizing:border-box">
+                    </li>
+                    <li>
+                      <p>第三希望</p><input type="text" name="面接第三希望(必須)" placeholder="例&rpar; 2024年4月5日 14時"
+                        style="width:100%; box-sizing:border-box">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="jobinfoindex_bottom" class="row pd20">
+                <div class="col one-fourth">
+                  <h3>志望動機・自己PR</h3>
+                </div>
+                <div class="col three-fourth">
+                  <textarea rows="10" cols="55" name="志望動機・自己PR" style="width:100%; box-sizing:border-box"></textarea>
+                </div>
+              </div>
+
+              <div id="jobinfo_title" class="row">
+
+                <h3 class="is-24px has-red-bar is-mt-40">個人情報保護方針</h3>
+
+              </div>
+
+              <div id="jobinfo_text" class="row">
+
+                <p>1.Sales and Innovation Japanは、ご登録いただく個人情報を、以下各号の目的で利用します。</br>
+                  </br>
+                  （1）採用可否の判断、および可否に関するご連絡。</br>
+                  （2）採用活動を強化するための応募者統計データの作成、及び分析。</br>
+                  （3）応募者の皆様から個人情報の取扱いに関する同意を求めるための連絡。</br>
+                  </br>
+                  2.Sales and Innovation Japanは、個人情報を、上記利用目的を達成するため、以下のとおり共同利用いたします。</br>
+                  </br>
+                  共同利用するデータの項目 応募者の皆様が弊社に提出した個人情報の一切</br>
+                  共同利用する者の範囲　株式会社Sales and Innovation Japan及び関連会社</br>
+                  共同利用の管理責任者　株式会社Sales and Innovation Japan</br>
+                  </br>
+                  3.Sales and Innovation Japanは、個人情報をプライバシーポリシーに基づき、取り扱います。</br>
+                  </br>
+                  4.ご応募の際にお預かりした、履歴書及びデータ等の個人情報につきましては、採用可否の選考後、速やかに処分または削除いたします。返却及びお問い合わせには応じかねますので、ご了承ください。
+                </p>
+
+              </div>
+
+              <div id="jobinfo_title" class="row">
+
+                <h3 class="is-24px has-red-bar is-mt-40">連絡について</h3>
+
+              </div>
+
+              <div id="jobinfo_text" class="row">
+
+                <p>
+                  オンラインエントリー受付後、1～2週間の社内選考の上、面談に進んでいただく方には担当者からメール、お電話、郵送のいずれかにてご連絡いたします。なお、応募書類の返却は致しませんので、予めご了承下さい。</br>
+                  </br>
+                  &#8251;応募された方の秘密は厳守いたします。</br>
+                  &#8251;入社時期はご相談に応じます。</br>
+                  </br>
+                  上記の内容に同意の上、送信して下さい。</br>
+                </p>
+
+              </div>
+              <div id="formsubmit" class="row is-mt-100">
+                <input class="submit_btn is-txt-center is-24px" type="submit" value="同意して送信する">
+            </form>
+            <script type="text/javascript" src="/mailform/mailform.js" charset="utf-8"></script>
+            <script type="text/javascript" src="/mailform/postcodes/get.cgi?js" charset="utf-8"></script>
+
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer_inner">
+      <div class="footer_container">
+        <div class="footer_container_upper">
+          <div class="footer_logo">
+            <img src="/recruit/images/footer_logo.png" alt="SIJ Company logo">
+          </div>
+
+          <ul class="footer_menu">
+            <li class="footer_menu_list"><a href="/" target="_blank" rel="noopener noreferrer">企業情報</a></li>
+            <li class="footer_menu_list"><a href="/privacy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+            </li>
+            <li class="footer_menu_list"><a href="/sitemap/" target="_blank" rel="noopener noreferrer">サイトマップ</a></li>
+          </ul>
+        </div>
+        <div class="footer_container_down">
+          <p class="copyright">&copy;Sales and Innovavtion Japan Inc.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/recruit/js/common.js"></script>
+  <script src="/recruit/js/script.js"></script>
+</body>
+
+</html>

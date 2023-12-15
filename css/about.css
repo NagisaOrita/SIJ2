@@ -1,0 +1,256 @@
+/* --------------------------------------------------- モットー ミッション バリュー ------------------------------------------------- */
+/* --------------------------------------------------- モットー ミッション バリュー ------------------------------------------------- */
+/* --------------------------------------------------- モットー ミッション バリュー ------------------------------------------------- */
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 280px;
+}
+
+.widget+.widget {
+    margin-top: 0px;
+}
+
+.widget-sticky {
+    position: -webkit-sticky;
+    /* Safari での互換性のため */
+    position: sticky;
+    top: 120px;
+}
+
+.widget-sticky p {
+    position: relative;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.4712rem;
+    letter-spacing: 0.09rem;
+    margin-bottom: 1.5rem;
+}
+
+.widget-sticky p::before,
+.widget-sticky p::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    background-color: var(--red);
+    left: -30px;
+}
+
+.widget-sticky p::before {
+    width: 23px;
+    /* 棒の長さを調整 */
+    height: 1px;
+    /* 棒の高さを調整 */
+    top: 50%;
+    /* 棒の位置を調整 */
+    transform: translateY(-50%);
+
+}
+
+.widget-sticky p::after {
+    width: 3px;
+    /* 円の直径 */
+    height: 3px;
+    /* 円の直径 */
+    border-radius: 50%;
+    /* 円形に */
+    top: 50%;
+    /* 円の位置を調整 */
+    transform: translateY(-50%);
+}
+
+/* --------------------------------------------------- バリュースローガン ------------------------------------------------- */
+/* --------------------------------------------------- バリュースローガン ------------------------------------------------- */
+/* --------------------------------------------------- バリュースローガン ------------------------------------------------- */
+.values_subtitle,
+.slogan_subtitle {
+    margin-bottom: 2rem;
+}
+
+.values_item,
+.slogan_item {
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.32rem;
+    background: #fff;
+
+    padding: 3rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    gap: 5.3rem;
+}
+
+.slogan_item {
+    padding: 3rem 3.6rem;
+    gap: 4.3rem;
+}
+
+.values_item img {
+    width: 92px;
+    height: 92px;
+}
+
+.slogan_item img {
+    width: 128px;
+    height: 128px;
+}
+
+.values_item_wrapper,
+.slogan_item_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_wrapper2 {
+    background: var(--red);
+    padding: 6rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-top: 15rem;
+}
+
+
+.content1_wrapper {
+    display: flex;
+    margin-top: 15rem;
+    justify-content: center;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.values_inner,
+.slogan_inner {
+    max-width: 1280px;
+}
+
+/* --------------------------------------------------- コーポメッセージ ------------------------------------------------- */
+/* --------------------------------------------------- コーポメッセージ ------------------------------------------------- */
+/* --------------------------------------------------- コーポメッセージ ------------------------------------------------- */
+#corp-message {
+    margin-top: 15rem;
+}
+
+.corp-message_heading_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.corp-message_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52rem;
+    height: 21rem;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.corp-message_img img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.corp-message_inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.corp-message_text {
+    max-width: none;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content_wrapper{
+        padding: 0px 30px;
+        gap: 6rem;
+    }
+    .content1_wrapper {
+        margin-top: 6rem;
+    }
+
+    .p_subtitle {
+        font-size: 2.0889rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.1253rem;
+        margin-bottom: 1rem;
+    }
+
+    h2.section_title {
+        font-size: 2.6146rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 3.0945rem;
+        /* 118.354% */
+        letter-spacing: -0.2615rem;
+    }
+
+    .p_section_text{
+        margin-top: 3rem;
+    }
+
+
+    .content_wrapper2 {
+        padding: 3rem 2rem;
+        margin-top: 6rem;
+    }
+    .values_item_wrapper{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .values_item{
+        justify-content: space-between;
+    }
+    .values_item p{
+        font-size: 2rem;
+    }
+
+    .slogan_item_wrapper{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .slogan_item{
+        gap: 3rem;
+    }
+    .slogan_item p{
+        font-size: 2rem;
+        line-height: 3.03rem;
+    }
+    .slogan_item img{
+        width: 90px;
+        height: 90px;
+    }
+
+    #corp-message{
+        margin-top: 5rem;
+    }
+    .corp-message_heading_wrapper{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .corp-message_inner{
+        padding: 0px 30px;
+    }
+    .corp-message_img{
+        width: 100%;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+}

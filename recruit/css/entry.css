@@ -1,0 +1,117 @@
+input,
+select {
+    padding: 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+}
+
+li input {
+    margin-bottom: 7px;
+}
+
+/* ラジオボタンの基本スタイル */
+input[type="radio"] {
+    accent-color: #ddd;
+    /* ラジオボタンの色を設定 */
+}
+
+/* ラジオボタンが選択されたときのスタイル */
+input[type="radio"]:checked {
+    accent-color: var(--red);
+    /* 選択されたときの色を赤に設定 */
+}
+
+textarea {
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+}
+
+#jobinfoindex,
+#jobinfoindex_bottom {
+    border-top: 1px solid #ddd;
+}
+
+.required {
+    background: var(--red);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+
+.row {
+    display: flex;
+}
+
+.pd20 {
+    padding: 2rem 0;
+}
+.pdb20 {
+    padding-bottom: 2rem;
+}
+
+.one-fourth {
+    width: 30%;
+}
+
+.three-fourth {
+    width: 70%;
+}
+
+.submit_btn {
+    width: 39rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,
+            #fff 0%,
+            #fff 50%,
+            var(--red) 50%,
+            var(--red) 100%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    transition: background-position ease 0.2s;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+.submit_btn:hover {
+    background-position: 0 0;
+    color: var(--red);
+}
+
+
+@media screen and (max-width:481px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .one-fourth {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .three-fourth {
+        width: 100%;
+    }
+
+    .pd20 {
+        padding: 1rem 0;
+    }
+    .pdb20{
+        padding-bottom: 1rem;
+    }
+    .required{
+        font-size: 1rem;
+    }
+
+    .submit_btn {
+        width: 100%;
+        height: 5rem;
+    }
+}
